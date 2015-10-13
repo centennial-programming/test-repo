@@ -7,6 +7,8 @@ void pause(){
 
 int main(){
 	atexit(pause);
-	std::cout << "Hello World!" << std::endl;
+	for (int n=0;n<5;++n){
+		std::cout << "Hello World!" << std::endl;
+	}
 	return EXIT_SUCCESS;
 }
