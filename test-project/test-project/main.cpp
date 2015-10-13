@@ -1,7 +1,12 @@
 #include <iostream>
 
+void pause(){
+	std::cin.sync();
+	std::cin.ignore();
+}
+
 int main(){
+	atexit(pause);
 	std::cout << "Hello World!" << std::endl;
-	system("PAUSE");
-	return 0;
+	return EXIT_SUCCESS;
 }
